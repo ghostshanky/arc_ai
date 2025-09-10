@@ -1,11 +1,10 @@
-// server.js
 import express from "express";
 import fetch from "node-fetch";
 
 const app = express();
 app.use(express.json());
 
-const BYTEZ_KEY = "YOUR_BYTEZ_KEY"; 
+const BYTEZ_KEY = process.env.BYTEZ_KEY; // ✅ set in Render dashboard
 
 let currentAbortController = null;
 
