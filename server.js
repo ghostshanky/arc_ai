@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const BYTEZ_KEY = process.env.BYTEZ_KEY; // set in Render env vars
+const BYTEZ_KEY =24af7bce660c20fc13cca1d155cee614; // set in Render env vars
 if (!BYTEZ_KEY) {
   console.warn("⚠️ BYTEZ_KEY not set. Set BYTEZ_KEY env var in Render.");
 }
