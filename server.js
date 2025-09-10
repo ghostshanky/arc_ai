@@ -55,4 +55,8 @@ app.get("/ping", async (_, res) => {
   }
 });
 
+app.get("/", (req, res) => {
+  res.send("✅ Arc AI Backend is Live! Use POST /chat to interact.");
+});
+
 app.listen(3000, () => console.log("✅ Backend running on http://localhost:3000"));
